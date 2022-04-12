@@ -4,11 +4,12 @@ body{
     align-items: center;
     margin: 0;
     font-size: 40px;
-    background-image: url("./Img/wood.jpeg");
+    background-image: url("./Img/forest.jpeg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: 'Grape Nuts', cursive;
 }
 .container{
     display: flex;
@@ -23,28 +24,34 @@ body{
     align-items: center;
     width: 300px;
     height: 80px;
-    background-color: rgb(169, 169, 169);
-    border: 5px solid rgb(199, 195, 195);
-    border-radius: 20px;
 }
 /**********index**************/
 .introduction{
     margin-top: 50px;
     width: 310px;
     height: 350px;
-    background-color: rgb(235, 227, 184);
-    box-shadow: 0  0 50px #000;
+    background-image: url("./Img/wood.jpeg");
+    box-shadow:  0 0 10px #000, 0 0 20px #000, 0 0 40px #000,
+    0 0 80px #000;
     padding: 10px;
 }
 .introduction p {
     margin-left: 10px;
     font-size: 20px;
+    color: red;
 }
 .indexbuttons{
   margin-top:100px ;
   display: flex;
   justify-content: center;
 }
+@media screen and (max-height:800px) {
+    .indexbuttons{
+        margin-top:50px ;
+        display: flex;
+        justify-content: center;
+    }
+  }
 .indexbuttons a {
     display: flex;
     justify-content: center;
